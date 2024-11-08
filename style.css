@@ -1,0 +1,208 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%; 
+}
+
+#cursor {
+    height: 14px;
+    width: 14px;
+    background-color: #a7d81e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all linear 0.05s;
+   
+}
+
+#cursor-blur {
+    height: 500px;
+    width: 500px;
+    background-color: #96c11e32;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+    transition: all linear 0.4s;
+}
+
+#nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 130px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 999; /* Keeps nav above video */
+    background-color: transparent; /* Start with a transparent background */
+}
+
+#nav img {
+    height: 3.5vw;
+    margin-top:0.05%;
+    border-radius: 30%;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 1200;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#background-video {
+    position: fixed; /* Make the video fill the screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width */
+    height: 100%; /* Cover the entire height */
+    object-fit: cover; /* Ensures the video covers the container */
+    z-index: -1; /* Keeps the video behind the nav */
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.50); /* Transparent background for readability */
+}
+
+/* Individual styles for page 1 */
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 90px;
+    font-weight: 800;
+    position: relative;
+}
+
+#page1 h1::before {
+    content: "BAT. BOWL. ENJOY.";
+    position: absolute;
+    color: #000;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 1px black;
+    z-index: -1;
+}
+
+
+#page1 h2 {
+    font-size: 40px;
+   
+    font-weight: bold;
+}
+
+#page1 p {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+
+/* Individual styles for page 2 */
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page2 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#page2 p {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+/* Individual styles for page 3 */
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page3 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#page3 p {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+/* Individual styles for page 4 */
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page4 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#page4 p {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+footer {
+    width:100%;
+    height:400px;
+    background-color: black;
+    color: white;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    border-top: solid 2px white;
+}
+footer p ,h2{
+  
+    font-size: 30px;
+    margin-top: 50px;
+
+}
